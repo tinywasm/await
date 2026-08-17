@@ -3,8 +3,9 @@ PLAN: "feat: minimal JS async bridge — block a goroutine on a Promise or a one
 TAG: v0.1.0
 EXECUTOR: jules
 REVIEWER: none
-STATUS: running
+STATUS: review
 SESSION: 17528392684790549094
+PR: https://github.com/tinywasm/await/pull/1
 ---
 
 > This plan is dispatched via the CodeJob workflow. See skill: agents-workflow.
