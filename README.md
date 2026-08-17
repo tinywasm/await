@@ -1,4 +1,5 @@
-# await
+# tinywasm/await
+<img src="docs/img/badges.svg">
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/tinywasm/await.svg)](https://pkg.go.dev/github.com/tinywasm/await)
 
