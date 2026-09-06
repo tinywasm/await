@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tinywasm/await"
+	"webtyp.com/await"
 )
 
 func TestPromise_resolve(t *testing.T) {

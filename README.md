@@ -1,20 +1,20 @@
-# tinywasm/await
+# webtyp/await
 <img src="docs/img/badges.svg">
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/tinywasm/await.svg)](https://pkg.go.dev/github.com/tinywasm/await)
+[![Go Reference](https://pkg.go.dev/badge/github.com/webtyp/await.svg)](https://pkg.go.dev/webtyp.com/await)
 
 Minimal JS async bridge for Go WASM: block a goroutine on a `Promise` or one-shot DOM event with zero dependencies.
 
 ## Overview
 
-In Go WebAssembly applications, blocking on JS Promises or DOM events requires registering callbacks (`js.FuncOf`), yielding via a channel, and cleaning up listeners afterwards. `tinywasm/await` provides clean, leak-free primitives with zero external dependencies.
+In Go WebAssembly applications, blocking on JS Promises or DOM events requires registering callbacks (`js.FuncOf`), yielding via a channel, and cleaning up listeners afterwards. `webtyp/await` provides clean, leak-free primitives with zero external dependencies.
 
 `Event` is the shared underlying primitive that registers one-shot event listeners, handles resolution and error channels, and removes both listeners and releases callback references on return.
 
 ## Installation
 
 ```bash
-go get github.com/tinywasm/await
+go get webtyp.com/await
 ```
 
 Note: All files require `//go:build wasm` and `syscall/js`.
@@ -31,7 +31,7 @@ package main
 import (
 	"syscall/js"
 
-	"github.com/tinywasm/await"
+	"webtyp.com/await"
 )
 
 func main() {
@@ -54,7 +54,7 @@ package main
 import (
 	"syscall/js"
 
-	"github.com/tinywasm/await"
+	"webtyp.com/await"
 )
 
 func getRecord(store js.Value, key string) (js.Value, error) {
@@ -73,7 +73,7 @@ package main
 import (
 	"syscall/js"
 
-	"github.com/tinywasm/await"
+	"webtyp.com/await"
 )
 
 func awaitLoad(element js.Value) (js.Value, error) {
