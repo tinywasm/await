@@ -18,8 +18,6 @@ replace webtyp.com/bus => ../bus
 
 replace webtyp.com/chart => ../chart
 
-replace webtyp.com/cloudflare => ../cloudflare
-
 replace webtyp.com/color => ../color
 
 replace webtyp.com/command => ../command
