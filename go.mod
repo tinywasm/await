@@ -6,8 +6,6 @@ replace webtyp.com/app => ../app
 
 replace webtyp.com/app-demo => ../app-demo
 
-replace webtyp.com/auth => ../auth
-
 replace webtyp.com/base64 => ../base64
 
 replace webtyp.com/binary => ../binary
